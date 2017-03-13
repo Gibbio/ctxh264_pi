@@ -17,32 +17,47 @@ sudo apt-get update && sudo apt-get install libx11-dev libxfixes-dev libxext-dev
 build RPi dependencies:
 
 cp -Rp firmware/hardfp/opt /
+
 make -C /opt/vc/src/hello_pi/libs/ilclient/
+
 make -C /opt/vc/src/hello_pi/libs/vgfont/
 
-- build ctxh264 lib:
+
+build ctxh264 lib:
 
 make -C ctxh264_pi/bcm_init/
+
 make -C ctxh264_pi/H264_Pi_sample/
 
-- install new libs:
+
+install new libs:
 
 cp H264_Pi_sample/ctxh264.so /opt/Citrix/ICAClient/lib/
+
 cp bcm_init/bcm_init.so /usr/lib/
 
-- lib jpeg turbo:
+
+lib jpeg turbo:
 
 remove /opt/Citrix/ICAClient/lib/ctxjpeg_fb*.so
+
 or rebuild ctxjpeg_fb with use_turbo = TRUE; (default)
 
-- suggested config params:
+
+suggested config params:
 
 /boot/config.txt:
+
 gpu_mem=256
+
 framebuffer_depth=32
+
 framebuffer_ignore_alpha=1
 
+
+
 /opt/Citrix/ICAClient/config/module.ini:
+
 ;H264Enabled=False (comment out)
 
 
