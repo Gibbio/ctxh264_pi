@@ -1,5 +1,5 @@
 OBJS=bcm_init.o
-BIN=bcm_init.bin
+BIN=bcm_init.so
 LDFLAGS+=-lilclient -ldl
 
 include ../Makefile.include

@@ -4,7 +4,7 @@
 *
 *   Citrix-specific type and macro definitions required for Plugin SDK.
 *
-*   $Id: //LinuxBasedReceivers/13.5/ClientEngine/unix/CitrixPluginSDK/inc/citrix.h#1 $
+*   $Id: //icaclient/unix13.2/client/unix/CitrixPluginSDK/inc/citrix.h#1 $
 *
 *   Copyright 2011-2014 Citrix Systems, Inc.  All Rights Reserved.
 *
