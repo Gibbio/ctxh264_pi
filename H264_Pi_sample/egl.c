@@ -18,7 +18,7 @@
 
 #define WINDOW_READ_TIME_MS 500
 
-//#define WATERMARK
+#define WATERMARK
 
 BOOL window_hidden = FALSE;
 
