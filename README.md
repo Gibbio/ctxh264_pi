@@ -1,17 +1,20 @@
 # ctxh264_pi
 
---- Rebuild on RPi 2/3 boards:
+Rebuild on RPi 2/3 boards:
 
-- clone repos:
+clone repos:
 
-git clone https://github.com/raspberrypi/firmware.git firmware 
+git clone https://github.com/raspberrypi/firmware.git firmware
+
 git clone https://github.com/Gibbio/ctxh264_pi.git ctxh264_pi
 
-- install prerequisite:
+
+install prerequisite:
 
 sudo apt-get update && sudo apt-get install libx11-dev libxfixes-dev libxext-dev
 
-- build RPi dependencies:
+
+build RPi dependencies:
 
 cp -Rp firmware/hardfp/opt /
 make -C /opt/vc/src/hello_pi/libs/ilclient/
