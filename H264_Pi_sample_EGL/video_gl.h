@@ -31,6 +31,7 @@
 #include "EGL/eglext.h"
 
 #define X11_SUPPORT
+#include "citrix.h"
 #include "H264_decode.h"
 
 typedef unsigned char BOOL;

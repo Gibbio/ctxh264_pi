@@ -12,7 +12,8 @@
 #			
 ###############################################################################
 
-CFLAGS=-fpic -O3 -Wall -I. -fno-stack-protector
+#CFLAGS=-fpic -O3 -Wall -I. -fno-stack-protector
+CFLAGS=-O3 -pipe -march=armv7-a -marm -mthumb-interwork -mfpu=neon-vfpv4 -mtune=cortex-a7 -mabi=aapcs-linux
 
 .c.o:
 	$(CC) -c $(CFLAGS) -o $@ $+
